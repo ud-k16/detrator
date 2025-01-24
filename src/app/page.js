@@ -69,7 +69,10 @@ export default function Home() {
       </Grid2>
       <Divider />
       <Grid2 flexDirection={"row"} display={"flex"} container columnSpacing={1}>
-        <Grid2 offset={2} size={{ lg: 6 }}>
+        <Grid2
+          offset={{ lg: 2, sm: 0, xs: 0, md: 1 }}
+          size={{ lg: 6, sm: 12, xs: 12 }}
+        >
           <div
             style={{
               height: 700,

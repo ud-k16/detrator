@@ -68,17 +68,27 @@ export default function Home() {
         </Grid2>
       </Grid2>
       <Divider />
-      <Grid2 flexDirection={"row"} display={"flex"}>
-        <Grid2
-          offset={2}
-          size={{ lg: 6 }}
-          borderColor={"blue"}
-          border={"thick"}
-          borderRight={3}
-        >
-          <div></div>
+      <Grid2 flexDirection={"row"} display={"flex"} container columnSpacing={1}>
+        <Grid2 offset={2} size={{ lg: 6 }}>
+          <div
+            style={{
+              height: 700,
+              borderWidth: 1,
+              borderStyle: "solid",
+              borderColor: "blue",
+            }}
+          ></div>
         </Grid2>
-        <Grid2 borderColor={"blue"} border={"thick"}></Grid2>
+        <Grid2 size={{ lg: 3 }}>
+          <div
+            style={{
+              height: 650,
+              borderWidth: 1,
+              borderStyle: "solid",
+              borderColor: "blue",
+            }}
+          ></div>
+        </Grid2>
       </Grid2>
     </Grid2>
   );

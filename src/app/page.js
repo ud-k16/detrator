@@ -31,8 +31,8 @@ export default function Home() {
           style={{ width: 400 }}
           placeholder="what are you looking for?"
           InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
+            endAdornment: (
+              <InputAdornment position="end">
                 <CiSearch />
               </InputAdornment>
             ),

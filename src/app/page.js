@@ -4,6 +4,7 @@ import {
   Grid2,
   InputAdornment,
   TextField,
+  Input,
 } from "@mui/material";
 import { CiSearch } from "react-icons/ci";
 
@@ -34,17 +35,18 @@ export default function Home() {
             display: { xs: "none", lg: "block" },
           }}
         >
-          <TextField
+          <Input
             size={"small"}
-            style={{ width: 400 }}
-            placeholder="what are you looking for?"
-            InputProps={{
-              endAdornment: (
-                <InputAdornment position="end">
-                  <CiSearch />
-                </InputAdornment>
-              ),
+            style={{
+              width: 400,
+              borderStyle: "solid",
+              borderWidth: 1,
+              paddingLeft: 5,
+              paddingRight: 5,
             }}
+            placeholder="what are you looking for?"
+            endAdornment={<CiSearch />}
+            disableUnderline={true}
           />
         </Grid2>
 
@@ -66,6 +68,18 @@ export default function Home() {
         </Grid2>
       </Grid2>
       <Divider />
+      <Grid2 flexDirection={"row"} display={"flex"}>
+        <Grid2
+          offset={2}
+          size={{ lg: 6 }}
+          borderColor={"blue"}
+          border={"thick"}
+          borderRight={3}
+        >
+          <div></div>
+        </Grid2>
+        <Grid2 borderColor={"blue"} border={"thick"}></Grid2>
+      </Grid2>
     </Grid2>
   );
 }
